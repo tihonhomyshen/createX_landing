@@ -156,5 +156,37 @@ body{
 }
 
 .advertise-page__container{
-  
+  margin-top: 100px;
+
+}
+
+.overview-advertise{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-title{
+  font-size: 46px;
+  font-weight: 700;
+  color: var(--gray900);
+  margin-bottom: 24px;
+}
+
+.block-description{
+  font-size: 18px;
+  color: var(--gray700);
+  margin-bottom: 60px;
+}
+
+.video-block{
+  height: 500px;
+}
+
+.video-block video{
+  width: 1230px;
+  height: 500px;
+  border-radius: 5px;
+  object-fit: cover;
 }
