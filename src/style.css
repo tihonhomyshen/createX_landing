@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --gray600: #9A9CA5;
+  --gray700: #787A80;
+  --gray800: #424551;
+  --gray900: #1E212C;
+  --orange: #FF5A30;
+
+}
+
+body{
+  font-size: 14px;
+  font-family: "Ubuntu";
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 20px 0;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation ul{
+  display: flex;
+}
+
+.navigation li{
+
+  list-style-type: none;
+  margin-right: 40px;
+  font-size: 16px;
+}
+
+.navigation li:last-child{
+  margin-right: 0px;
+}
+
+.navigation a{
+  color: var(--gray800);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contacts{
+  display: flex;
+}
+
+.contacts-information{
+  padding: 12px;
+}
+
+.contacts .title{
+  font-weight: 700;
+  color: var(--gray800);
+}
+
+.contacts .contacts-overview{
+  font-size: 18px;
+  color: var(--gray900)
+}
+
+
+.dot{
+  height: 48px;
+  width: 48px;
+  background-color: var(--gray700);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-page{
+  color:white;
+  background-image: url("images/main-page/bg-image.jpg");
+  background-repeat: none;
+  
+}
+
+.main-page .title{
+  font-size: 72px;
+  font-weight: 700;
+  padding: 200px 0 20px 0;
+  text-transform: uppercase;
+}
+
+.overview span{
+  color: var(--orange);
+}
+
+.main-page .description{
+  max-width: 595px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.main-page__buttons button{
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 60px;
+  padding: 18px 40px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.info-button{
+  background: none;
+  border: 1px solid white;
+  color:white;
+  margin-right: 40px;
+}
+
+.active-button{
+  background-color: var(--orange);
+  color: white;
+  border: none;
+}
+
+.pager{
+  display: flex;
+  margin: 180px 0 60px 0;
+}
+
+.page{
+  min-width: 180px;
+  font-size: 28px;
+  font-weight: 700;
+  opacity: 60%;
+  margin-right: 5px;
+}
+
+.page hr{
+  border-radius: 2px;
+}
+
+.page:first-child{
+  opacity: 100%;
+}
+
+.advertise-page__container{
+  
+}
