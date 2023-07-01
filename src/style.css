@@ -190,3 +190,48 @@ body{
   border-radius: 5px;
   object-fit: cover;
 }
+
+.core-values{
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-values{
+  display: flex;
+}
+
+.value-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  padding: 0 94px;
+  border-right: 1px solid lightskyblue;
+}
+
+.value-card:first-child{
+  padding-left: 0px;
+}
+
+.value-card:last-child{
+  padding-left: 94px;
+  border-right: none;
+}
+
+.value-card img{
+  height: 48px;
+  width: 48px;
+}
+
+.block-title-card{
+  font-size: 20px;
+  margin-top: 24px;
+}
+
+.block-description-card{
+  font-size: 16px;
+  max-width: 285px;
+  text-align: center;
+}
