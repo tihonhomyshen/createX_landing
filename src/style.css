@@ -10,7 +10,6 @@
   --gray800: #424551;
   --gray900: #1E212C;
   --orange: #FF5A30;
-
 }
 
 body{
@@ -21,12 +20,13 @@ body{
 .container{
   margin: 0 auto;
   max-width: 1230px;
-  padding: 20px 0;
+  /* этот паддинг только для хедера */
 }
 
 .header__container{
   display: flex;
   justify-content: space-between;
+  padding: 20px 0; 
 }
 
 .navigation{
@@ -40,7 +40,6 @@ body{
 }
 
 .navigation li{
-
   list-style-type: none;
   margin-right: 40px;
   font-size: 16px;
@@ -56,48 +55,65 @@ body{
   font-weight: 700;
 }
 
-.contacts{
+.header-contacts{
   display: flex;
 }
 
-.contacts-information{
-  padding: 12px;
+.contacts-information:first-of-type{
+  margin-right: 12px;
 }
 
-.contacts .title{
+.header-contacts .title{
   font-weight: 700;
   color: var(--gray800);
 }
 
-.contacts .contacts-overview{
+.header-contacts .data{
   font-size: 18px;
   color: var(--gray900)
 }
 
-
-.dot{
+.slide-arrow{
+  position: absolute;
   height: 48px;
   width: 48px;
-  background-color: var(--gray700);
+  background-color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  opacity: 50%;
 }
+
+.arrow-left{
+  margin-left: 32px;
+  left: 0%;
+  top: 50%;
+}
+
+.arrow-right{
+  margin-right: 32px;
+  right: 0%;
+  top: 50%;
+}
+
 
 .main-page{
   color:white;
   background-image: url("images/main-page/bg-image.jpg");
   background-repeat: repeat;
-  
+}
+
+.overview{
+  padding: 200px 0 60px 0;
 }
 
 .main-page .title{
   font-size: 72px;
   font-weight: 700;
-  padding: 200px 0 20px 0;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .overview span{
@@ -110,14 +126,21 @@ body{
   line-height: 30px;
 }
 
-.main-page__buttons button{
+button{
   font-family: "Ubuntu";
   font-size: 16px;
   font-weight: 700;
-  margin-top: 60px;
-  padding: 18px 40px;
   border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
+.main-page__buttons{
+  margin-bottom: 180px;
+}
+
+.main-page__buttons button{
+  padding: 18px 40px;
 }
 
 .info-button{
@@ -125,25 +148,18 @@ body{
   border: 1px solid white;
   color:white;
   margin-right: 40px;
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .active-button{
-  font-size: 16px;
-  font-family: "Ubuntu";
   background-color: var(--orange);
   color: white;
-  font-weight: 700;
   border: none;
-  text-transform: uppercase;
-  cursor: pointer;
   border-radius: 4px;
 }
 
 .pager{
   display: flex;
-  margin: 180px 0 60px 0;
+  padding-bottom: 120px;
 }
 
 .page{
@@ -152,10 +168,11 @@ body{
   font-weight: 700;
   opacity: 60%;
   margin-right: 5px;
+  border-bottom: 2px solid white;
 }
 
-.page hr{
-  border-radius: 2px;
+.page p{
+  padding-bottom: 12px;
 }
 
 .page:first-child{
@@ -171,7 +188,10 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
+
+/* общий стиль */
 
 .block-title{
   font-size: 46px;
@@ -186,10 +206,6 @@ body{
   margin-bottom: 60px;
 }
 
-.video-block{
-  height: 500px;
-}
-
 .video-block video{
   width: 1230px;
   height: 500px;
@@ -197,10 +213,17 @@ body{
   object-fit: cover;
 }
 
+.video-block{
+  margin-bottom: 180px;
+}
+
 .core-values{
-  margin-top: 180px;
   display: flex;
   flex-direction: column;
+}
+
+.core-values .block-description{
+  margin-bottom: 0px;
 }
 
 .block-values{
@@ -214,7 +237,7 @@ body{
   align-items: center;
   word-wrap: break-word;
   padding: 0 94px;
-  border-right: 1px solid lightskyblue;
+  border-right: 1px solid gray;
 }
 
 .value-card:first-child{
@@ -229,11 +252,11 @@ body{
 .value-card img{
   height: 48px;
   width: 48px;
+  margin-bottom: 24px;
 }
 
 .block-title-card{
   font-size: 20px;
-  margin-top: 24px;
 }
 
 .block-description-card{
@@ -244,10 +267,14 @@ body{
 }
 
 .question-form{
+  position: relative;
+  top: 120px;
+  border-radius: 4px;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  margin-top: 170px;
   max-height: 243px;
+  padding: 48px 60px;
 }
 
 .form-title{
@@ -301,12 +328,8 @@ body{
   background-image: url("images/service-page/bg-image.png");
 }
 
-.services__page__container{
-  
-}
-
 .overview-services{
-  margin-top: 120px;
+  padding-top: 212px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,6 +339,7 @@ body{
 .block-services{
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .block-services .service{
@@ -332,26 +356,32 @@ body{
   color: var(--gray900);
 }
 
-.block-services p{
-  margin-top: 24px;
-  font-size: 20px;
-  font-weight: 700;
+.service img{
+  margin-bottom: 24px;
 }
 
-.hover-background{
-  background-image: url("images/service-page/image.jpg");
-  color: white;
+.block-services p{
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .service:last-child{
   margin-right: 0px;
 }
 
+.services__page .container{
+  padding-bottom: 80px;
+}
+
+.services__page .info-block{
+  margin: 0px;
+}
+
 .info-block{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 85px 0;
+  margin: 85px 0 125px 0;
   max-height: 50px;
 }
 
@@ -375,9 +405,6 @@ body{
   min-height: 50px;
 }
 
-.projects__page__container{
-}
-
 .overview-projects .block-title{
   max-width: 705px;
   margin: 100px 0 60px 0;
@@ -387,11 +414,14 @@ body{
   display: flex;
 }
 
-.card{
+.shadow{
   box-shadow: 0px 4px 4px -4px #1E212C0D;
   box-shadow: 0px 12px 10px -6px #9A9CA514;
   box-shadow: 0px 30px 24px -10px #9A9CA51A;
   box-shadow: 0px 80px 80px -20px #9A9CA529;
+}
+
+.card{
   margin-right: 30px;
 }
 
@@ -440,6 +470,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 170px;
 }
 
 .companies .block-title{
@@ -462,14 +493,18 @@ body{
 .client-block{
   display: flex;
   justify-content: space-between;
-  margin: 170px 0 60px 0;
 }
 
 .client-review{
   max-width: 600px;
+  padding-top: 60px;
 }
 
-.review img{
+.client-review .block-title{
+  margin-bottom: 60px;
+}
+
+.review .client-img{
   margin-bottom: 24px;
 }
 
@@ -483,12 +518,33 @@ body{
 .review .client-name{
   font-size: 16px;
   color: var(--gray900);
+  font-weight: 700;
   margin-bottom: 4px;
 }
 
 .review .client-status{
+  display: flex;
   color:var(--gray700);
+  align-items: center;
+  justify-content: space-between;
 } 
+
+.client-status__arrows img{
+  cursor: pointer;
+}
+
+.client-status__left-arrow{
+  margin-right: 30px;
+}
+
+.client-status__right-arrow{
+  margin-right: 7px;
+}
+
+.block-image img{
+  position: relative;
+  top: 60px;
+}
 
 .stats-news{
   background-image: url("images/news-page/bg-image.png");
@@ -500,15 +556,15 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 180px 0;
 }
 
 .stats .block-title{
-  margin: 120px 0 60px 0;
+  margin-bottom:60px;
 }
 
 .stats-block{
   display:flex;
-  margin-bottom: 180px;
 }
 
 .stats-card{
@@ -523,8 +579,8 @@ body{
   margin-right: 0;
 }
 
-.card-description{
-  margin-top: 20px
+.stats-card img{
+  margin-bottom: 20px
 }
 
 .recent-news{

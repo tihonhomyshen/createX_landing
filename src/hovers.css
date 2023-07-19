@@ -1,0 +1,14 @@
+:root{
+  --orange: #FF5A30;
+}
+
+.active-button:hover{
+  background-color: white;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.active-button{
+  transition: background-color 1.5s, color 0.4s, border 1.5s;
+}
+
