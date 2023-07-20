@@ -102,7 +102,7 @@ body{
 
 .main-page{
   color:white;
-  background-image: url("images/main-page/bg-image.jpg");
+  background-image: url("images/main-page/bg-image4.jpg");
   background-repeat: repeat;
 }
 
@@ -158,8 +158,15 @@ button{
   border-radius: 4px;
 }
 
+.pager > .active{
+  opacity: 100%;
+}
+
 .pager{
   display: flex;
+}
+
+.slider-controls{
   padding-bottom: 120px;
 }
 
@@ -174,10 +181,6 @@ button{
 
 .page p{
   padding-bottom: 12px;
-}
-
-.page:first-child{
-  opacity: 100%;
 }
 
 .advertise-page__container{
