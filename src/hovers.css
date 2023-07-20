@@ -1,5 +1,10 @@
 :root{
   --orange: #FF5A30;
+  --gray900: #1E212C;
+}
+
+nav a:hover{
+  color: var(--orange);
 }
 
 .active-button:hover{
@@ -8,7 +13,23 @@
   border: 1px solid var(--orange);
 }
 
-.active-button{
-  transition: background-color 1.5s, color 0.4s, border 1.5s;
+.active-button, .info-button{
+  transition: background-color 1s, color 0.4s, border 1s;
 }
 
+.info-button:hover{
+  background-color: white;
+  color: var(--gray900);
+}
+
+.slide-arrow{
+  transition: opacity 0.5s;
+}
+
+.slide-arrow:hover{
+  opacity: 100%;
+}
+
+.project__arrow:hover{
+  background-color: var(--orange);
+}

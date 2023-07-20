@@ -74,7 +74,6 @@ body{
 }
 
 .slide-arrow{
-  position: absolute;
   height: 48px;
   width: 48px;
   background-color: white;
@@ -87,12 +86,14 @@ body{
 }
 
 .arrow-left{
+  position: absolute;
   margin-left: 32px;
   left: 0%;
   top: 50%;
 }
 
 .arrow-right{
+  position: absolute;
   margin-right: 32px;
   right: 0%;
   top: 50%;
@@ -230,6 +231,12 @@ button{
   display: flex;
 }
 
+.gradient-border{
+  border: 1px solid;
+  border-image-source:linear-gradient(360deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+  border-image-slice: 1;
+}
+
 .value-card{
   display: flex;
   flex-direction: column;
@@ -237,7 +244,6 @@ button{
   align-items: center;
   word-wrap: break-word;
   padding: 0 94px;
-  border-right: 1px solid gray;
 }
 
 .value-card:first-child{
@@ -405,9 +411,24 @@ button{
   min-height: 50px;
 }
 
+.overview-projects{
+  display:flex;
+  padding: 100px 0 60px 0;
+  justify-content: space-between;
+}
+
 .overview-projects .block-title{
   max-width: 705px;
-  margin: 100px 0 60px 0;
+  margin-bottom: 0;
+}
+
+.project__arrow{
+  opacity: 100%;
+}
+
+.projects__arrows{
+  display:flex;
+  align-items: end;
 }
 
 .block-projects{
