@@ -13,6 +13,10 @@ nav a:hover{
   border: 1px solid var(--orange);
 }
 
+.main-page{
+  transition: background-image 1s;
+}
+
 .active-button, .info-button{
   transition: background-color 1s, color 0.4s, border 1s;
 }

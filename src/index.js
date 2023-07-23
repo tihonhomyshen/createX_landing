@@ -36,3 +36,10 @@ leftArrowMP.addEventListener('click', () =>{
         console.log(activePageIndex, nextPageIndex);
     }
 })
+
+new Swiper('.background-slider', {
+    navigation: {
+        nextEl: 'swiper-button-next',
+        prevEl: 'swiper-button-prev',
+    },
+})
