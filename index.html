@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/hovers.css">
+    <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>CreateX</title>
 </head>
@@ -40,9 +41,33 @@
             </div>
         </div>
     </header>
-    <section class="main-page">
-        <span class="arrow-left slide-arrow"><img src="src/images/main-page/Left.svg" alt=""></span>
-        <span class="arrow-right slide-arrow"><img src="src/images/main-page/Right.svg" alt=""></span>
+    <section class="main-page background-slider swiper-container">
+        <div class="background-slider__wrapper swiper-wrapper">
+            <div class="background-slider__slide swiper-slide">
+                <div class="background-slider__image">
+                    <img src="src/images/main-page/bg-images/bg-image.jpg" alt="">
+                </div>
+            </div>
+            <div class="background-slider__slide swiper-slidee">
+                <div class="background-slider__image">
+                    <img src="src/images/main-page/bg-images/bg-image2.jpg" alt="">
+                </div>
+            </div>
+            <div class="background-slider__slide swiper-slide">
+                <div class="background-slider__image">
+                    <img src="src/images/main-page/bg-images/bg-image3.jpg" alt="">
+                </div>
+            </div>
+            <div class="background-slider__slide swiper-slide">
+                <div class="background-slider__image">
+                    <img src="src/images/main-page/bg-images/bg-image4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <span class="arrow-left slide-arrow"><img src="src/images/main-page/Left.svg" alt=""></span>
+        <span class="arrow-right slide-arrow"><img src="src/images/main-page/Right.svg" alt=""></span> -->
         <div class="container main-page__container">
             <div class="overview">
                 <p class="title">create<span class="orange-char">X</span> <br> construction</p>
@@ -426,8 +451,8 @@
             </div>
         </div>
     </footer>
-    <script src="src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="src/index.js"></script>
 </body>
 
 </html>

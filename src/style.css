@@ -861,3 +861,7 @@ button{
 .last-block .active-button{
   padding: 8px;
 }
+
+.swiper-slide img{
+  max-height: 50%;
+}
