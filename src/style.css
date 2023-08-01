@@ -5,6 +5,7 @@
 }
 
 :root{
+  --gray200: #F4F5F6;
   --gray600: #9A9CA5;
   --gray700: #787A80;
   --gray800: #424551;
@@ -20,57 +21,6 @@ body{
 .container{
   margin: 0 auto;
   max-width: 1230px;
-  /* этот паддинг только для хедера */
-}
-
-.header__container{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0; 
-}
-
-.navigation{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navigation ul{
-  display: flex;
-}
-
-.navigation li{
-  list-style-type: none;
-  margin-right: 40px;
-  font-size: 16px;
-}
-
-.navigation li:last-child{
-  margin-right: 0px;
-}
-
-.navigation a{
-  color: var(--gray800);
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.header-contacts{
-  display: flex;
-}
-
-.contacts-information:first-of-type{
-  margin-right: 12px;
-}
-
-.header-contacts .title{
-  font-weight: 700;
-  color: var(--gray800);
-}
-
-.header-contacts .data{
-  font-size: 18px;
-  color: var(--gray900)
 }
 
 .slide-arrow{
@@ -99,7 +49,6 @@ body{
   top: 50%;
 }
 
-
 .main-page{
   color:white;
   background-image: url("images/main-page/bg-images/bg-image.jpg");
@@ -125,37 +74,6 @@ body{
   max-width: 595px;
   font-size: 20px;
   line-height: 30px;
-}
-
-button{
-  font-family: "Ubuntu";
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 4px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.main-page__buttons{
-  margin-bottom: 180px;
-}
-
-.main-page__buttons button{
-  padding: 18px 40px;
-}
-
-.info-button{
-  background: none;
-  border: 1px solid white;
-  color:white;
-  margin-right: 40px;
-}
-
-.active-button{
-  background-color: var(--orange);
-  color: white;
-  border: none;
-  border-radius: 4px;
 }
 
 .pager > .active{
@@ -236,7 +154,8 @@ button{
 
 .gradient-border{
   border: 1px solid;
-  border-image-source:linear-gradient(360deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+  border-image-source:linear-gradient(360deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%,
+  #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
   border-image-slice: 1;
 }
 

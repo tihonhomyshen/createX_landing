@@ -1,0 +1,30 @@
+button{
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main-page__buttons{
+  margin-bottom: 180px;
+}
+
+.main-page__buttons button{
+  padding: 18px 40px;
+}
+
+.info-button{
+  background: none;
+  border: 1px solid white;
+  color:white;
+  margin-right: 40px;
+}
+
+.active-button{
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
