@@ -772,7 +772,7 @@ body{
   align-items: center;
 }
 
-.nav>p {
+.nav>label {
   text-transform: uppercase;
   margin-right: 16px;
 }
