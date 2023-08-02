@@ -9,36 +9,6 @@
   padding-bottom: 80px;
 }
 
-.nav-bar{
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.nav-bar__page{
-  color: var(--gray800);
-}
-
-.nav-bar__page .active{
-  color: var(--gray600);
-}
-
-.page-title__overview{
-  padding-bottom: 180px;
-}
-
-.page-title{
-  font-size: 94px;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding-bottom: 24px;
-}
-
-.page-description{
-  max-width: 600px;
-  font-size: 20px;
-  color: var(--gray700);
-}
-
 .services-block{
   background-image: url("services-page-images/service-bg.png");
   background-repeat: none;

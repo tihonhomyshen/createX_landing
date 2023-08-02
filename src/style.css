@@ -623,6 +623,7 @@ body{
 .contact-form .form-input{
   max-width: 415px;
   margin-bottom: 20px;
+  background-color: var(--gray200);
 }
 
 .form-input-message{

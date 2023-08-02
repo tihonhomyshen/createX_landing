@@ -1,0 +1,53 @@
+.info-header, .page-overview{
+  background-image: url("info/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.info-header{
+  padding-bottom: 80px;
+}
+
+.stats-section__container{
+  padding: 120px 0;
+}
+
+.company-stats{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.stats-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 178px;
+  max-width: 260px;
+}
+
+.stats-overview{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.stats-block img{
+  max-width: 48px;
+  max-height: 48px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.stats-block:last-child{
+  margin-right: 0px;
+}
+
+.stats-block .number{
+  font-size: 46px;
+  margin-bottom: 8px;
+  color: var(--orange);
+  font-weight: 700;
+}
